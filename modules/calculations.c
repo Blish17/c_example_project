@@ -21,7 +21,6 @@ float calculate_mean(int arr[], size_t length)
         return 0;
     }
 
-    // else:
     int sum = calculate_sum(arr, length);
     return (float)sum / length;
 }
