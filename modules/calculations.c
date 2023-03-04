@@ -1,11 +1,9 @@
-#include <stdio.h>
 #include "calculations.h"
 
 int calculate_sum(int arr[], size_t length)
 {
     int sum = 0;
-    int i = 0;
-    for (i = 0; i < length; i++)
+    for (int i = 0; i < length; i++)
     {
         sum += arr[i];
     }
@@ -13,14 +11,14 @@ int calculate_sum(int arr[], size_t length)
     return sum;
 }
 
-float calculate_mean(int arr[], size_t length)
+int calculate_mean(int arr[], size_t length, float* result)
 {
     if(length == 0)
     {
-        // if length is 0, we can't calculate mean due to divide by zero error.
-        return 0;
+        return -1; // error can't divide by 0
     }
 
     int sum = calculate_sum(arr, length);
-    return (float)sum / length;
+    *result = (float)sum / length;
+    return 0;
 }
