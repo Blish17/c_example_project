@@ -1,2 +1,2 @@
-project(calculations)
-add_library(calculations calculations.c calculations.h)
+project(operations)
+add_library(operations calculations.c calculations.h string_operations.h string_operations.c)
