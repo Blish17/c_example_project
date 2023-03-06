@@ -10,7 +10,7 @@ TEST(test_calculations, simple_arr) {
     float mean = 0;
     int success = calculate_mean(arr, n, &mean);
     EXPECT_EQ(success, 0);
-    EXPECT_FLOAT_EQ(mean, 5.0);
+    EXPECT_FLOAT_EQ(mean, 5.5);
 }
 
 TEST(test_calculations, empty_arr) {
