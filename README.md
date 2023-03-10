@@ -10,6 +10,7 @@ If you aren't importing the project directly from vsc:
 - delete the default `CMakeLists.txt` and `main.c`
 - Git clone the repository and put the contents of the folder `c_example_project`
 in the top layer of your newly created clion project.
+- run `git submodule update --init`
 
 Now everything should be setup :)
 
